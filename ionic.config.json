@@ -1,0 +1,7 @@
+{
+  "name": "DataTransfer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
