@@ -24,3 +24,12 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+
+.colorful-toast {
+  --background: linear-gradient(to right, #5fff8a, #7bfe84c1, #95e276);
+  --color: rgb(12, 13, 12);
+  --border-radius: 8px;
+}
+  

@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="ion-text-center">
+      Image To Text
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-text-center" [fullscreen]="true">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-margin">
+
+    <ion-img
+      src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzMi1uaW5nLTYzLXguanBn.jpg"
+      slot="start" class="custom-image" (click)="scanNow()"></ion-img>
+    <span class="scanimage">
+      scan image
+    </span>
+
+    <img class="imagetoshow" [src]="imgPath" alt="" srcset="" *ngIf="isImageExist">
+
+    <div class="textarea-container">
+      <textarea class="bottom-textarea" [(ngModel)]="textareaContent" placeholder="Find your text here..."></textarea>
+      <ion-button (click)="copy()">Copy Text</ion-button>
+    </div>
+
   </div>
+
 </ion-content>
